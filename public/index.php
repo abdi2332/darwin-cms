@@ -4,7 +4,7 @@
 
 // if / else logic 
 
-$section = $_GET['section'] ?? 'home';
+$section = $_GET['section'] ?? $_POST['section'] ?? 'home';
 
 
 if ($section=='about-us') {

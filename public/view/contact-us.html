@@ -41,7 +41,6 @@
     background: #dc3545;
     font-weight: 600;
     color: #fff;
-    cursor: pointer;
 }
 .btnContactSubmit
 {
@@ -51,6 +50,7 @@
     color: #fff;
     background-color: #0062cc;
     border: none;
+    
     cursor: pointer;
 }
 </style>
@@ -61,7 +61,9 @@
             <div class="contact-image">
                 <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
             </div>
-            <form method="post">
+            <form action="index.php" method="post">
+                <input type="hidden" name="section" value="contact">
+                 <input type="hidden" name="action" value="submit">
                 <h3>Drop Us a Message</h3>
                <div class="row">
                     <div class="col-md-6">
